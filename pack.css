@@ -1,0 +1,23 @@
+.loader {
+ display: flex;
+ background-color: #aaaaaafe;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ align-content: center;
+ position: fixed;
+ z-index: 2;
+ height: 100%;
+ transition: display .5s;
+}
+.loader  .loaders {
+ height: 200px;
+  width: 200px;
+  animation: rotate .6s linear infinite;
+}
+@keyframes rotate {
+ 0% {border-top: 6px solid var(--color);}
+ 36%{border-right: 6px solid var(--color);}
+ 72%{border-bottom: 6px solid var(--color);}
+  100%{border-left: 6px solid var(--color);}
+}

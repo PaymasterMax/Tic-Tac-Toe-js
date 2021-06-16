@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+:root {
+ --color:#fb009d;
+ --parent-width:10;
+
+}
+* {
+ padding: 0px;
+ margin: 0px;
+ box-sizing: border-box;
+ color: #fff;
+}
+*::selection {
+ background-color: inherit;
+}
+body {
+ background: url('tic-tac-toe.png') no-repeat;
+ background-size: cover;
+ height: 100vh;
+}
+.row {
+ display: flex;
+}
+.two,.five, .eight {
+ border-right: 4px solid #fff;
+ border-left: 4px solid #fff;
+}
+.row-1 {
+ border-bottom: 4px solid #fff;
+}
+.row-2 {
+ border-bottom: 4px solid #fff;
+}
+.row-3 {
+}
+.square {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+ text-align: center;
+ font-size: 40px;
+ display: block;
+ margin: auto;
+ padding-top: 30px;
+ font-weight:bold;
+}
+
+.game-wrapper {
+ justify-content: center;
+  margin: 20px auto;
+  display: flex;
+  min-width: 30px;
+}
+.container {
+ padding-top: 40px;
+}
+h3 {
+ text-align: center;
+ color: #fff;
+}
+.play-area {
+ background-color: #ffffff33;
+ --parent-width:calc(width)
+}
+.game-control {
+ margin-top: 40px;
+}
+.game-control .btns{
+  display: block;
+  width: 150px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  margin: 20px auto;
+  background-color: transparent;
+}
+
+.game-control .btns:first-child{
+  background-color: var(--color);
+}
+.game-control .btns:nth-child(2){
+  border: 1px solid var(--color);
+}
+.sidenote {
+ text-align: center;
+}
+
+.floater span {
+ display: block;
+ margin: 0px auto;
+ background-color: black;
+ border-radius: 10px;
+ padding: 6px 10px;
+ text-align: center;
+}
+.floater {
+ transition: display 1s;
+ pointer-events: none;
+  margin-left: 40%;
+  position: fixed;
+  font-size: 20px;
+  min-width: 20%;
+  display: none;
+  bottom: 10px;
+  height: 20%;
+  z-index: 2;
+}
+.key {
+ font-family: 'Roboto Condensed';
+ pointer-events: none;
+ font-weight: bold;
+ position: fixed;
+ right: 40px;
+ top: 100px;
+ z-index: -1;
+}
+.key p,.key h4{
+ color: #ffffffaa !important;
+}
+.play-area {
+
+}
+.author{
+ position: relative;
+ text-align: center;
+ top: 40px;
+}
+@media only screen and (max-width:800px) {
+  .floater{
+    margin-left: 70px;
+  }
+}
